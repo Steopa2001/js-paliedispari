@@ -19,7 +19,14 @@ console.log(`Numero pc:`, pcNumber);
 const sum = userNumber + pcNumber;
 console.log(`Somma:`,sum);
 
-
+//funzione per stabilire se la somma dei due numeri è pari o dispari
+function sumEvenOrOdd(number) {
+  if (number % 2 === 0) {
+    return 'pari'
+  } else {
+    return 'dispari'
+  }
+}
 
 
 
