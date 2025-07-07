@@ -4,7 +4,7 @@ const userChoice = prompt(`Scegli: pari o dispari`).toLowerCase();
 console.log(userChoice)
 
 const userNumber = parseInt(prompt(`Inserisci un numero da 1 a 5`));
-console.log(userNumber);
+console.log('Numero utente:',userNumber);
 
 //funzione per generare un numero random da 1 a 5
 function randomNumber() {
@@ -28,5 +28,14 @@ function sumEvenOrOdd(number) {
   }
 }
 
+//verifico il risultato 
+const result = sumEvenOrOdd(sum);
+console.log(`La somma è:`, result);
 
+//dichiaro chi ha vinto
+if (result === userChoice) {
+  console.log('Hai vinto!');
+} else {
+  console.log('Hai perso!');
+}
 
