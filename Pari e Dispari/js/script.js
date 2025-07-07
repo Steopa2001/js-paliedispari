@@ -11,3 +11,15 @@ function randomNumber() {
   return Math.floor(Math.random() * 5) + 1;
 }
 
+//genero numero per il computer 
+const pcNumber = randomNumber();
+console.log(`Numero pc:`, pcNumber);
+
+//sommo i due numeri
+const sum = userNumber + pcNumber;
+console.log(`Somma:`,sum);
+
+
+
+
+
